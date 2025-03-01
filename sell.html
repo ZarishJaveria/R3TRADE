@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - R3 Trade</title>
+    <link rel="stylesheet" href="sellstyle.css">
+    <style>
+        .btn {
+            color: white;
+            border: none;
+            background-color: chocolate;
+            cursor: pointer;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: green;
+        }
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+        .no-results {
+            color: red;
+            font-size: 18px;
+            text-align: center;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="navbar.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="short logo.jpg" alt="Barter Exchange Logo">
+        </div>
+        <nav class="navbar"> <!-- Add class="navbar" here -->
+            <ul>
+              <li><a href="indexnew.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </nav>
+          
+        <!-- Search Bar and Login -->
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search" autocomplete="off">
+                <ul id="suggestion-box"></ul>
+                <button type="button">Search</button>
+            </div>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <div class="ball"></div>
+
+    <!-- Recycle and Donate Section -->
+    <section class="recycle-page">
+        <h2>Products</h2>
+        <p class="no-results">No products found.</p>  <!-- Message for no search results -->
+        
+        <div class="recycle-grid">
+            <div class="item">
+                <img src="cementsell.jpeg" alt="Cement">
+                <p><strong>Cement</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="bricksell.jpeg" alt="Bricks">
+                <p><strong>Bricks</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="shoessell.jpeg" alt="Shoes">
+                <p><strong>Shoes</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery<br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="woodsell.jpeg" alt="Wood">
+                <p><strong>Wood</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="sofasell.jpg" alt="Sofa">
+                <p><strong>Sofa</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="booksell.jpg" alt="Books">
+                <p><strong>Books</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="temposell.jpg" alt="Tempo">
+                <p><strong>Tempo</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item">
+                <img src="grainsell.jpg" alt="Grain">
+                <p><strong>Grain</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item hidden extra">
+                <img src="bag3.jpg" alt="Bag">
+                <p><strong> Bag </strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item hidden extra">
+                <img src="bag2.jpg" alt="Bagg">
+                <p><strong> Pouch </strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item hidden extra">
+                <img src="cloth.jpg" alt="cloth">
+                <p><strong>Old Cloth</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+            <div class="item hidden extra">
+                <img src="perfume.jpg" alt="perfume">
+                <p><strong> Perfume</strong><br>
+                    Price - ******** Rs.<br>
+                    Free Delivery <br>
+                    <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+<!-- No Products Found Message and Explore Section -->
+<p class="no-results">No products found.</p>
+<div class="explore-section">
+  <p>Explore other products below </p>
+  <button id="browse-again">Continue Exploring</button>
+</div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 R3Trade. All rights reserved.</p>
+        <p><a href="terms-of-service.html">Privacy Policy & Terms of Service</a></p>
+    </footer>
+
+    <script src="sell-search.js"></script>  <!-- Search script -->
+</body>
+</html>

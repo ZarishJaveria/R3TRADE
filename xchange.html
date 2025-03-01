@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycle and Donate - Barter Exchange</title>
+  <link rel="stylesheet" href="xchangestyle.css">
+  <script src="navbar.js"></script>
+  <style>
+    .btn {
+        color: white;
+        border: none;
+        background-color: chocolate;
+        cursor: pointer;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+    }
+    .btn:hover {
+        background-color: green;
+    }
+    .btn a {
+        text-decoration: none;
+        color: white;
+    }
+    .no-results {
+        color: red;
+        font-size: 18px;
+        text-align: center;
+        display: none;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="short logo.jpg" alt="Barter Exchange Logo">
+      <h1>R3Trade</h1>
+    </div>
+    <nav class="navbar"> <!-- Add class="navbar" here -->
+      <ul>
+        <li><a href="indexnew.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." id="search" autocomplete="off">
+        <button type="button" id="search-btn">Search</button>
+      </div>
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+  </header>
+
+  <div class="ball"></div>
+
+  <!-- Recycle and Donate Section -->
+  <section class="recycle-page">
+    <h2>Products</h2>
+    <div class="recycle-grid">
+      <div class="item" data-name="Wooden Cupboard">
+        <img src="cupboardxchange.jpeg" alt="Wooden Cupboard">
+        <p><strong>Wooden Cupboard</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Storage Rack">
+        <img src="rackxchange.jpeg" alt="Storage Rack">
+        <p><strong>Storage Rack</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+        </p>
+
+      </div>
+      <div class="item" data-name="Television Set">
+        <img src="telexchange.jpeg" alt="Television Set">
+        <p><strong>Television Set</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Toy Car">
+        <img src="carxchange.jpg" alt="Toy Car">
+        <p><strong>Toy Car</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Sewing Machine">
+        <img src="sewingxchange1.jpg" alt="Sewing Machine">
+        <p><strong>Sewing Machine</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Office Chair">
+        <img src="chairxchange.jpg" alt="Office Chair">
+        <p><strong>Office Chair</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Gas Stove">
+        <img src="gasxchange.jpg" alt="Gas Stove">
+        <p><strong>Gas Stove</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item" data-name="Wall Clock">
+        <img src="clockschange.jpg" alt="Wall Clock">
+        <p><strong>Wall Clock</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item hidden extra" data-name="Old telephone">
+        <img src="phone.jpg" alt="Old telephone">
+        <p><strong>Old telephone</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item hidden extra" data-name="type">
+        <img src="type.jpg" alt="type">
+        <p><strong>Type writer</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item hidden extra" data-name="old glass">
+        <img src="glass.jpg" alt="Old glass">
+        <p><strong>Old glass</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+      <div class="item hidden extra" data-name="Bag">
+        <img src="bag.jpg" alt="Bag">
+        <p><strong> Bag</strong><br>Price - ******** Rs.<br>Free Delivery<br>
+        <button class="btn"><a href="cart.html"> Add to Cart</a></button>
+      </p>
+
+      </div>
+    </div>
+
+    <!-- No Products Found Message and Explore Section -->
+    <p class="no-results">No products found.</p>
+    <div class="explore-section">
+      <p>Explore other products below </p>
+      <button id="browse-again">Continue Exploring</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 R3Trade. All rights reserved.</p>
+    <p><a href="terms-of-service.html">Privacy Policy & Terms of Service</a></p>
+  </footer>
+
+  <script src="exchange-search.js"></script>
+</body>
+</html>
